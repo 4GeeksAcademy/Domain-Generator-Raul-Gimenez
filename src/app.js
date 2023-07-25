@@ -9,7 +9,7 @@ function generateAllCombinations() {
     for (let j = 0; j < middlePart.length; j++) {
       for (let p = 0; p < endPart.length; p++) {
         for (let r = 0; r < extension.length; r++){
-        result.push(`${startPart[i]} ${middlePart[j]} ${endPart[p]}`);
+        result.push(`${startPart[i]}-${middlePart[j]}-${endPart[p]}${extension[r]}`);
         }
       }
     }
